@@ -7,7 +7,6 @@ function Navbar({ children }) {
   const handleClick = () => {
     setCounter((prev) => prev + 1);
   };
-
   return (
     <>
       <div>
