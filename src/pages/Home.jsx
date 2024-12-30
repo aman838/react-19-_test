@@ -33,7 +33,13 @@ function Home() {
     return <div>wait.. </div>;
   }
 
-  return <div>Home {counter} </div>;
+  return (
+    <div>
+      <meta name="author"></meta>
+      <title>home page</title>
+      <div>Home {counter} </div>
+    </div>
+  );
 }
 
 export default Home;

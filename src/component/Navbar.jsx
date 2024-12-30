@@ -7,6 +7,9 @@ function Navbar({ children }) {
   const handleClick = () => {
     setCounter((prev) => prev + 1);
   };
+  const decrement = () => {
+    setCounter((prev) => prev - 1);
+  };
   return (
     <>
       <div>
@@ -14,7 +17,8 @@ function Navbar({ children }) {
       </div>
       {children}
       <div>
-        <button onClick={handleClick}>click</button>
+        <button onClick={handleClick}>click +</button>
+        <button onClick={decrement}>click -</button>
       </div>
     </>
   );
